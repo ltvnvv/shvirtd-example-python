@@ -7,7 +7,9 @@ services:
       db:
         condition: service_healthy
     image: shvirtd-example-python:0.0.1
-    build: ./Dockerfile.python
+    build: 
+      context: .
+      dockerfile: Dockerfile.python
     restart: on-failure
     networks:
       backend:
