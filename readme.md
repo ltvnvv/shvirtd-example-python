@@ -1,3 +1,17 @@
+## Задача 1
+
+```
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip install -r requirements.txt
+
+CMD ["python", "main.py"]
+```
+
 ## Задача 3
 
 ![screenshot](screenshots/1.png)
